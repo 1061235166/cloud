@@ -1,5 +1,6 @@
 package com.cloud.demo.service;
 
+import com.cloud.Annotation;
 import org.springframework.stereotype.Service;
 
 /**
@@ -9,6 +10,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class MicroService1 {
 
+	@Annotation(annoName = "asd")
 	public String getName(String name){
 		return "hello your name is:"+name;
 	}
